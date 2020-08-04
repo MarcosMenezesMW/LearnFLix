@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -17,8 +17,7 @@ ReactDOM.render(
       <Route path="/cadastro/video" component={CadastroVideo} />
       <Route path="/cadastro/categoria" component={CadastroCategoria} />
       <Route component={Pagina404} />
-
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

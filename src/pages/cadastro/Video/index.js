@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
@@ -32,6 +31,7 @@ function CadastroVideo() {
 
       <form onSubmit={(event) => {
         event.preventDefault();
+        // alert('Video Cadastrado com sucesso!!!1!');
 
         const categoriaEscolhida = categorias.find((categoria) => {
           return categoria.titulo === values.categoria;
@@ -43,6 +43,7 @@ function CadastroVideo() {
           categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
+            console.log('Cadastrou com sucesso!');
             history.push('/');
           });
       }}
